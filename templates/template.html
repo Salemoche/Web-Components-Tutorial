@@ -1,0 +1,15 @@
+<template id="template">
+  <h2> Bye, World </h2>
+  <p></p>
+</template>
+
+<script type="text/javascript">
+  // automatically add the component to the document that imports it
+
+  const thisImportDoc = document.currentScript.ownerDocument;
+
+  const tmplNode = thisImportDoc.querySelector('#template');
+
+  document.body.appendChild(tmplNode.cloneNode('true'));
+
+</script>
